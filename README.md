@@ -12,7 +12,7 @@
 
 
 ## PROJETO
-Esse projeto o qual desenvolvi junto ao Bootcamp de Desenvolvimento Frontend com Angular da [DIO](https://web.dio.me/), foi desevolvido para simular uma pokedex, e para isso além de conhecimetos base como HTML, CSS e JavaScript, foi ultilizamos também a Api [PokeApi](https://pokeapi.co/), que nos forece dados com images, nomes, tipos e entre outros diversos dados relacioados aos pokemos. [ACESSE O PROJETO AQUI](https://htppsvitor.github.io/Portif-lio/).
+Esse projeto o qual desenvolvi junto ao Bootcamp de Desenvolvimento Frontend com Angular da [DIO](https://web.dio.me/), foi desevolvido para simular uma pokedex, e para isso além de conhecimetos base como HTML, CSS e JavaScript, foi ultilizamos também a Api [PokeApi](https://pokeapi.co/), que nos forece dados com images, nomes, tipos e entre outros diversos dados relacioados aos pokemos. [ACESSE O PROJETO AQUI](https://65a7d0e7cb80e80b42dd4d5d--incredible-melba-5e3292.netlify.app).
 
 ## LAYOUT
 
