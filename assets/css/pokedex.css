@@ -177,7 +177,7 @@
 }
 
 .pokemon::after {
-    content: url(assets/img/pokeball.png);
+    content: url(/assets/img/pokeball.png);
     width: 100px;
     height: 100px;
     position: absolute;

@@ -17,6 +17,8 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
+    background: url(/assets/img/pokeballBackground.png);
+    background-size: contain;
     width: 100vw;
     align-items: center;
     height: 100vh;
