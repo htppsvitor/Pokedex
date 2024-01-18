@@ -1,5 +1,7 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton')
+const openButton = document.getElementById('openButton')
+const content = document.getElementById('content')
 const limit = 10;
 let offset = 0;
 const maxLimit = 151;
@@ -53,3 +55,20 @@ loadMoreButton.addEventListener('click', () => {
     }
 
 })
+
+
+
+openButton.addEventListener('click', () => {
+
+    var propriedade = window.getComputedStyle(content).getPropertyValue("height");
+
+    if (propriedade === '0px') {
+        content.style.height = '76vh'
+        openButton.style.backgroundColor = '#77c850'
+    } else {
+        content.style.height = '0vh'
+        openButton.style.backgroundColor = '#f7cf2c'
+    }
+    
+})
+
