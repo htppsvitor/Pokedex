@@ -63,14 +63,21 @@
 
 #red {
     background-color: #f76e59;
+    animation: .8s light linear infinite;
 }
 
 #yellow {
     background-color: #fed752;
+    animation: .9s light linear infinite;
 }
 
 #green {
     background-color: #73E055;
+    animation: 1s light linear infinite;
+}
+
+@keyframes light {
+    to {opacity: .6;}
 }
 
 .play {
@@ -194,6 +201,7 @@
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .pokemon::after {
