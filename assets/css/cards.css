@@ -1,0 +1,120 @@
+#modal {
+    display: flex;
+    width: 40rem;
+    height: 25rem;
+    position: absolute;
+    background-color:brown;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    border-radius: 2rem;
+}
+
+.conteiner-right {
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem 0 0 2rem;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.conteiner-right::before {
+    content: "";
+    width: 15rem;
+    height: 15rem;
+    background-image: url(/assets/img/pokeball.png);
+    background-size: 15rem 15rem ;
+    position: absolute;
+    left: -3rem;
+    bottom: -3rem;
+    z-index: -1;
+    opacity: .3;
+}
+
+.detail-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-card .name-card {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.detail-card .number-card {
+    color: #000;
+    opacity: .4;}
+
+.detail-card ol {
+    display: flex;
+    list-style: none;
+    gap: .7rem;
+}
+
+.detail-card ol li {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: .5rem;
+    font-size: .725rem;
+    filter: brightness(1.1);
+    text-align: center;
+    background-color: forestgreen;
+}
+
+.pokemon-card {
+    width: 13rem;
+    height: 13rem;
+    margin: 16%;    
+    z-index: 3;
+}
+
+
+
+
+
+.conteiner-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    align-items: end;
+    background-color: #fff;
+    gap: 4rem;
+}
+
+.conteiner-left .conteiner-dados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.conteiner-left #closeCard {
+    opacity: .3;
+    cursor: pointer;
+    
+}
+
+.conteiner-left .conteiner-dados div{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.conteiner-left .conteiner-dados #atributos{
+    width: 3rem;
+    opacity: .6;
+}
+
+.conteiner-left .conteiner-dados #line{
+    width: 8rem;
+    height: .3rem;
+    background-color: #63d56c;
+    opacity: .8;
+    border-radius: 3rem;
+}

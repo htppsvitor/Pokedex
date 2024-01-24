@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
 </head>
 <body>
     <div class="pokedex" id="top">
@@ -24,22 +25,24 @@
             <span class="little-c" id="yellow"></span>
             <span class="little-c" id="green"></span>
         </div>
-
-        
+        <div class="conteiner-input" id="input">
+            <input type="text" placeholder="Quem é esse pokemon" >
+            <button><img src="assets/img/lupa.svg" alt="lupa"></button>
+        </div>
     </div>
     <section id="content">
 
             <ol id="pokemonList" class="pokemons">
                 
             </ol>
-            
+
             <div class="pagination">
                 <button id="loadMoreButton">
                     Load More
                 </button>     
             </div>
            
-        </section>
+    </section>
 
         <div class="pokedex" id="botton">
             <span class="play"></span>
