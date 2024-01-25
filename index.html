@@ -26,8 +26,8 @@
             <span class="little-c" id="green"></span>
         </div>
         <div class="conteiner-input" id="input">
-            <input type="text" placeholder="Quem é esse pokemon" >
-            <button><img src="assets/img/lupa.svg" alt="lupa"></button>
+            <input id="input-search" type="text" placeholder="Quem é esse pokemon" value="" >
+            <button id="btn-search"><img src="assets/img/lupa.svg" alt="lupa"></button>
         </div>
     </div>
     <section id="content">
@@ -36,7 +36,7 @@
                 
             </ol>
 
-            <div class="pagination">
+            <div class="pagination" id="pagination">
                 <button id="loadMoreButton">
                     Load More
                 </button>     
@@ -45,7 +45,7 @@
     </section>
 
         <div class="pokedex" id="botton">
-            <span class="play"></span>
+            <span id="btn-back"></span>
             <spann class="traco"></spann>
             <button id="openButton"></button>
         </div>

@@ -85,7 +85,7 @@
     position: absolute;
     gap: 0.0rem;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 1.1rem;
     z-index: 2;
 
     height: 2rem;
@@ -99,6 +99,7 @@
     background-color: #162325;
     color: #fff;
     border: 0;
+    max-width: 30vw;
     border-radius:1rem;
     box-shadow: #b8000f 0px 0px 0px 2px;
     padding-left: 1rem;
@@ -118,7 +119,7 @@ input::placeholder { color: #383838; }
     border-radius: 1rem ;
     box-shadow: #b8000f 0px 0px 0px 2px;
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
 }
 
 .conteiner-input button:hover {
@@ -127,11 +128,12 @@ input::placeholder { color: #383838; }
 }
 
 
-.play {
+#btn-back {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 18px solid orange;
     border-radius: 5rem;
+    cursor: pointer;
 }
 
 .traco {
@@ -145,6 +147,7 @@ input::placeholder { color: #383838; }
 }
 
 #content {
+    position: relative;
     height: 0vh;
     width: 97.5%;
     background-color: #162325;
@@ -252,15 +255,7 @@ input::placeholder { color: #383838; }
     z-index: 1;
 }
 
-.pelicula {
-    width: 100%;
-    height: 100%;
-    left: 0rem;
-    top: 0rem;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1;
-}
+
 
 .pokemon::after {
     content: url(/assets/img/pokeball.png);
@@ -332,6 +327,24 @@ input::placeholder { color: #383838; }
     border-radius: 1rem;
     cursor: pointer;
 }
+
+#not-found {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-found {
+    color: #fff;
+}
+
+
 
 
 @media screen and (min-width:400px) {
