@@ -165,9 +165,17 @@ document.getElementById('input-search').addEventListener('keypress', (event) => 
 
 
 buttonBack.addEventListener('click', () => {
+
     offset = 0
+
+    var elemento = document.getElementById("pokemonList");
+    while (elemento.firstChild) {
+        elemento.removeChild(elemento.firstChild);
+    }
+    
+    loadMore()
     loadMoreButton.style.display = 'flex'
-    pokemonList.innerHTML = loadMore()
+
 })
 
 
