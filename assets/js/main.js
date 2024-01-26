@@ -14,11 +14,6 @@ function convertPokemonTypesToLi(pokemoTypes) {
     return pokemoTypes.map((typeSlot) => `<li class="type">${typeSlot.types}</li>`)
 }
 
-PokeApi.getPokemons().then((pokemons = []) => {
-    
-    pokemonList.innerHTML = pokemons.map(convertPokemonToLi).join('')
-
-})
 
 function convertPokemonToLi(pokemon) {
     return `
@@ -37,6 +32,7 @@ function convertPokemonToLi(pokemon) {
         </li>
     `
 }
+
 
 function loadMore(offset, limit) {
 
@@ -75,7 +71,7 @@ loadMore(offset,limit)
 
 function buttonMore() {
    
-    loadMoreButton.addEventListener('click', () => {
+    
         offset += limit
     
         const qtdRecord = offset + limit
@@ -91,10 +87,11 @@ function buttonMore() {
             loadMore(offset, limit)
         }
     
-    })
+    
     
 }
-buttonMore()
+
+loadMoreButton.addEventListener('click', () => { buttonMore() })
 
 
 
@@ -167,13 +164,12 @@ document.getElementById('input-search').addEventListener('keypress', (event) => 
 })    
 
 
-
-
 buttonBack.addEventListener('click', () => {
     offset = 0
     loadMoreButton.style.display = 'flex'
     pokemonList.innerHTML = loadMore()
 })
+
 
 
     
